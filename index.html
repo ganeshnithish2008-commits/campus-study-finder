@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Study Group Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎓 Campus Study Finder</h1>
+        <p>Find or create a study group on campus instantly.</p>
+    </header>
+
+    <main>
+        <!-- Form to Add a New Group -->
+        <section class="form-section">
+            <h2>➕ Host a Study Session</h2>
+            <form id="groupForm">
+                <input type="text" id="subject" placeholder="Subject (e.g., Physics 101)" required>
+                <input type="text" id="topic" placeholder="Topic (e.g., Exam Review, Lab Report)" required>
+                <input type="text" id="location" placeholder="Location (e.g., Library Floor 2)" required>
+                <input type="time" id="time" required>
+                <button type="submit">Post Session</button>
+            </form>
+        </section>
+
+        <!-- List of Active Groups -->
+        <section class="list-section">
+            <h2>📚 Active Study Groups</h2>
+            <div id="groupList">
+                <!-- Live sessions will appear here dynamically via JavaScript -->
+                <p class="no-groups">No study sessions posted yet. Be the first!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
